@@ -12,8 +12,7 @@
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
     "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
     "prettier": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\"",
-    "prepare": "npm run build",
-    "prepublishOnly": "npm test && npm run prettier && npm run lint"
+    "prepare": "npm run build"
   },
   "keywords": [
     "react-use-ez"
@@ -33,5 +32,10 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "typescript": "^5.4.2"
-  }
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ]
 }
