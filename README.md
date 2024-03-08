@@ -22,3 +22,18 @@ const [theme, changeTheme] = useTheme()
 ```
 
 </details>
+
+---
+
+**useBattery**
+
+<details close>
+<summary>Demo</summary>
+
+```js
+import { useBattery } from 'react-use-ez'
+
+const battery = useBattery()
+```
+
+</details>

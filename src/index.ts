@@ -1,3 +1,4 @@
 import { useTheme, Theme } from './hooks/useTheme'
+import useBattery from './hooks/useBattery'
 
-export { useTheme, Theme }
+export { useTheme, Theme, useBattery }
