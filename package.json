@@ -1,11 +1,12 @@
 {
   "name": "react-use-ez",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist/esm/index.d.ts",
   "scripts": {
+    "start": "src/public/index.tsx",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "yarn build:esm && yarn build:cjs",
     "build:esm": "tsc",
