@@ -14,6 +14,9 @@ dependencies:
   react-dom:
     specifier: ^18
     version: 18.2.0(react@18.2.0)
+  react-use-ez:
+    specifier: ^1.0.2
+    version: 1.0.2
 
 devDependencies:
   '@types/node':
@@ -1964,6 +1967,10 @@ packages:
   /react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
     dev: true
+
+  /react-use-ez@1.0.2:
+    resolution: {integrity: sha512-r3luTrLyxZZkcHFFIQ8Q2TpIpcKjVQ9rdYQE4KfbbbrxeFq++KfA+RFp2Aad9VozFuZ65jFzwbpntASmdrn+Ug==}
+    dev: false
 
   /react@18.2.0:
     resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
