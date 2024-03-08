@@ -1,3 +1,3 @@
-import MyCounter from './components/App'
+import { useTheme, Theme } from './hooks/useTheme'
 
-export { MyCounter }
+export { useTheme, Theme }
