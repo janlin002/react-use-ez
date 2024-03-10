@@ -1,4 +1,7 @@
 import { useTheme, Theme } from './hooks/useTheme'
 import useBattery from './hooks/useBattery'
 
-export { useTheme, Theme, useBattery }
+// firebase
+import useRemoteConfig from './hooks/firebase/useRemoteConfig'
+
+export { useTheme, Theme, useBattery, useRemoteConfig }

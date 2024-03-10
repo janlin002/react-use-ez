@@ -37,3 +37,25 @@ const battery = useBattery()
 ```
 
 </details>
+
+### firebase
+
+**useRemoteConfig**
+
+<details close>
+<summary>Demo</summary>
+
+```js
+import { useRemoteConfig } from 'react-use-ez'
+
+const firebaseConfig = {
+  apiKey: ''
+  authDomain: ''
+  projectId: ''
+  storageBucket: ''
+  messagingSenderId: ''
+  appId: ''
+}
+
+const message = useRemoteConfig(firebaseConfig, 'config-name')
+```
