@@ -38,6 +38,23 @@ const battery = useBattery()
 
 </details>
 
+---
+
+**useHover**
+
+<details close>
+<summary>Demo</summary>
+
+```js
+import { useHover } from 'react-use-ez'
+
+const [hoverRef, isHovering] = useHover()
+
+<div ref={hoverRef}>{isHovering ? "Hovering" : "Not Hovering"}</div>
+```
+
+</details>
+
 ### firebase
 
 **useRemoteConfig**
