@@ -1,6 +1,6 @@
 {
   "name": "react-use-ez",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -16,7 +16,8 @@
     "prepare": "npm run build"
   },
   "keywords": [
-    "react-use-ez"
+    "react-use-ez",
+    "janlin002"
   ],
   "author": "janlin002",
   "license": "MIT",

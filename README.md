@@ -1,14 +1,14 @@
 # react-use-ez
 
-### publish (owner only)
+## publish (owner only)
 
 ```js
 npm publish
 ```
 
-### API
+## API
 
-**useTheme**
+### useTheme
 
 <details close>
 <summary>Demo</summary>
@@ -25,7 +25,7 @@ const [theme, changeTheme] = useTheme()
 
 ---
 
-**useBattery**
+### useBattery
 
 <details close>
 <summary>Demo</summary>
@@ -40,7 +40,7 @@ const battery = useBattery()
 
 ---
 
-**useHover**
+### useHover
 
 <details close>
 <summary>Demo</summary>
@@ -55,9 +55,39 @@ const [hoverRef, isHovering] = useHover()
 
 </details>
 
-### firebase
+---
 
-**useRemoteConfig**
+### useCookie
+
+<details close>
+<summary>Demo</summary>
+
+```js
+import { useCookie } from 'react-use-ez'
+
+const [getCookie, setCookie] = useCookie()
+
+console.log(getCookie("cookie-name"))
+
+<button
+    onClick={() => {
+      setCookie("cookie-name", "cookie-value");
+    }}
+  >
+    點擊
+</button>
+```
+
+</details>
+
+**setCookie config**
+
+- name
+- value
+- exdays
+- domainName
+
+### useRemoteConfig (firebase)
 
 <details close>
 <summary>Demo</summary>
