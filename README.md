@@ -87,6 +87,25 @@ console.log(getCookie("cookie-name"))
 - exdays
 - domainName
 
+---
+
+### useRequest
+
+<details close>
+<summary>Demo</summary>
+
+```js
+import { useRequest } from 'react-use-ez'
+
+const getUser = (): Promise<any> => {...}
+
+const { loading, data: users, error } = useRequest(getUsers);
+```
+
+</details>
+
+---
+
 ### useRemoteConfig (firebase)
 
 <details close>
