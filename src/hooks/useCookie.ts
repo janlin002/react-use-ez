@@ -1,4 +1,9 @@
-const useCookie = () => {
+type TUseCookie = {
+  getCookie: (cname: string) => string | null
+  setCookie: (name: string, value: string, exdays?: number, domainName?: string) => void
+}
+
+const useCookie = (): TUseCookie => {
   const getCookie = (cname: string) => {
     let cvalue = null
     if (typeof window !== 'undefined') {
@@ -21,7 +26,7 @@ const useCookie = () => {
     document.cookie = `${name}=${value};${expires};path=/;${domain}`
   }
 
-  return [getCookie, setCookie]
+  return { getCookie, setCookie }
 }
 
 export default useCookie
