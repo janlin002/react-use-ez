@@ -106,6 +106,21 @@ const { loading, data: users, error } = useRequest(getUsers);
 
 ---
 
+### useFactorial
+
+<details close>
+<summary>Demo</summary>
+
+```js
+import { useFactorial } from 'react-use-ez'
+
+const { result } = useFactorial(3)
+```
+
+</details>
+
+---
+
 ### useRemoteConfig (firebase)
 
 <details close>
