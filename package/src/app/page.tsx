@@ -4,16 +4,14 @@ import { useEffect } from 'react'
 import Image from 'next/image'
 import styles from './page.module.css'
 
-import { useTheme, Theme } from 'react-use-ez'
+import useMediaQuery from '../../hooks/useMediaQuery'
+import useTheme from '../../hooks/useTheme'
 
 export default function Home() {
+
+  const isMobile = useMediaQuery('(prefers-color-scheme: dark)')
   const [theme, changeTheme] = useTheme()
 
-  useEffect(() => {
-    ;(navigator as any).getBattery().then((battery: any) => {
-      console.log(battery.level * 100)
-    })
-  }, [])
 
-  return <button onClick={() => changeTheme()}>change theme</button>
+  return <button onClick={()=>changeTheme()}>change theme</button>
 }
