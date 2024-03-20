@@ -114,7 +114,22 @@ const { loading, data: users, error } = useRequest(getUsers);
 ```js
 import { useFactorial } from 'react-use-ez'
 
-const { result } = useFactorial(3)
+const { result } = useFactorial(3) // 6
+```
+
+</details>
+
+---
+
+### useMediaQuery
+
+<details close>
+<summary>Demo</summary>
+
+```js
+import { useMediaQuery } from 'react-use-ez'
+
+const isLargeScreen = useMediaQuery('(min-width: 1024px)')
 ```
 
 </details>

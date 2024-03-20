@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react'
 
+import useMediaQuery from './useMediaQuery'
+
 enum Theme {
   LIGHT = 'light',
   DARK = 'dark',
@@ -8,11 +10,11 @@ enum Theme {
 const useTheme = (): [Theme, () => void] => {
   const [theme, setTheme] = useState<Theme>(Theme.LIGHT)
 
-  useEffect(() => {
-    const platformTheme = window?.matchMedia('(prefers-color-scheme: dark)').matches ? Theme.DARK : Theme.LIGHT
+  const platformTheme = useMediaQuery('(prefers-color-scheme: dark)') ? Theme.DARK : Theme.LIGHT
 
+  useEffect(() => {
     setTheme(platformTheme)
-  }, [])
+  }, [platformTheme])
 
   const changeTheme = () => {
     if (theme === Theme.LIGHT) {
