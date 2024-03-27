@@ -7,15 +7,16 @@ import useTheme from '../../hooks/useTheme'
 import useEyeDropper from '../../hooks/useEyeDropper'
 import { init } from 'next/dist/compiled/webpack/webpack'
 import useUserInfo from '../../hooks/useUserInfo'
+import useDevice from '../../hooks/useDevice'
 
 export default function Home() {
-  const isMobile = useMediaQuery('(prefers-color-scheme: dark)')
+  // const isMobile = useMediaQuery('(prefers-color-scheme: dark)')
   const [theme, changeTheme] = useTheme()
 
   const { isSupported, sRGBHex, open } = useEyeDropper()
-  const userInfo = useUserInfo()
+  const { isPhone, isAndroid, isMobile, isMac } = useDevice()
 
-  console.log(userInfo, 'userInfo')
+  console.log(isPhone, isAndroid, isMobile, isMac, 'userInfo')
 
   console.log(isSupported, sRGBHex, 'checkData')
 

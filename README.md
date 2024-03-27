@@ -188,6 +188,19 @@ const userInfo = useUserInfo()
 
 ---
 
+### useDevice (Inaccurate)
+
+<details close>
+<summary>Demo</summary>
+
+```js
+import { useDevice } from 'react-use-ez'
+
+const { isPhone, isAndroid, isMobile, isMac } = useDevice()
+```
+
+## </details>
+
 ### useRemoteConfig (firebase)
 
 <details close>
