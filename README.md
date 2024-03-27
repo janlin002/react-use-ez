@@ -136,6 +136,21 @@ const isLargeScreen = useMediaQuery('(min-width: 1024px)')
 
 ---
 
+### useEyeDropper
+
+<details close>
+<summary>Demo</summary>
+
+```js
+import { useEyeDropper } from 'react-use-ez'
+
+const { isSupported, sRGBHex, open } = useEyeDropper()
+```
+
+</details>
+
+---
+
 ### useRemoteConfig (firebase)
 
 <details close>
