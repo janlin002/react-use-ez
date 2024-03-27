@@ -136,6 +136,71 @@ const isLargeScreen = useMediaQuery('(min-width: 1024px)')
 
 ---
 
+### useEyeDropper
+
+<details close>
+<summary>Demo</summary>
+
+```js
+import { useEyeDropper } from 'react-use-ez'
+
+const { isSupported, sRGBHex, open } = useEyeDropper()
+```
+
+</details>
+
+---
+
+### useUserInfo
+
+<details close>
+<summary>Demo</summary>
+
+```js
+import { useUserInfo } from 'react-use-ez'
+
+const userInfo = useUserInfo()
+```
+
+</details>
+
+### Type Declarations
+
+```js
+/**
+ * ip 位置
+ *
+ * city 所在城市
+ *
+ * region 所在地區
+ *
+ * country 所在國家
+ *
+ * loc 經緯度
+ *
+ * org 電信公司
+ *
+ * timezone 時區
+ *
+ * readme 說明
+ */
+```
+
+---
+
+### useDevice (Inaccurate)
+
+<details close>
+<summary>Demo</summary>
+
+```js
+import { useDevice } from 'react-use-ez'
+
+const { isPhone, isAndroid, isMobile, isMac } = useDevice()
+```
+
+## </details>
+
 ### useRemoteConfig (firebase)
 
 <details close>
