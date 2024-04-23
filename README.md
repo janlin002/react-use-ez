@@ -199,7 +199,20 @@ import { useDevice } from 'react-use-ez'
 const { isPhone, isAndroid, isMobile, isMac } = useDevice()
 ```
 
-## </details>
+</details>
+
+### useBoolean
+
+<details close>
+<summary>Demo</summary>
+
+```js
+import { useBoolean } from 'react-use-ez'
+
+const { value, setTrue, setFalse, toggle } = useBoolean(false)
+```
+
+</details>
 
 ### useRemoteConfig (firebase)
 
